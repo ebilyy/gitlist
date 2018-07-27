@@ -1,0 +1,21 @@
+
+  <div class="user">
+      <p>
+          <img class="user__img" src="{{ user.avatar_url }}" alt="">
+      <p>
+          Login: {{ user.login }}
+        </p>
+        <div>
+          email: {{user.email}}
+        </div>
+        <div>
+          name : {{user.name}}
+        </div>
+        repositories:
+          <div class="repo" *ngFor="let item of reposList" (click)="showRepo(item)">
+              <div class="repo__name"> {{item.name}}</div>
+          </div>
+  </div>
+
+
+

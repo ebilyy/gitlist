@@ -1,0 +1,9 @@
+<h2 class="list-title">
+    list of items
+</h2>
+
+<ul class="list">
+  <li class="list__item" *ngFor="let user of users">
+    <app-list-item [user]="user" ></app-list-item>
+  </li>
+</ul>

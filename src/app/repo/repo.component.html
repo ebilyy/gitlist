@@ -1,0 +1,16 @@
+<p>
+  Owner : {{owner}}
+</p>
+<h2 class="h2">Branches</h2>
+<ul class="branches">
+  <li class="branch" *ngFor="let item of branches">{{item.name}}</li>
+</ul>
+<h2 class="h2">Commits</h2>
+
+<ul class="list">
+    <li class="list__item" *ngFor="let item of commits">
+      author: {{item.commit.author.name}}<br/>
+      email: {{item.commit.author.email}}<br/>
+      date: {{item.commit.author.date}}<br/>
+    </li>
+  </ul>
